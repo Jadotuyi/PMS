@@ -1,13 +1,3 @@
-<?php
-include 'db.php';
-
-if (!isset($_SESSION['user_id'])) {
-    header("Location: index.php");
-    exit();
-}
-
-// The rest of your protected page content goes here
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -122,7 +112,7 @@ a:hover {
     </form>
     
     <?php
-    
+    include 'db.php';  // Ensure this path is correct
 
     if (isset($_GET['month'])) {
         $month = $_GET['month'];
@@ -168,6 +158,6 @@ a:hover {
     }
     ?>
 
-    <a href="home.php">Back to Home</a>
+    <a href="index.php">Back to Home</a>
 </body>
 </html>

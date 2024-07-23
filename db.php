@@ -4,7 +4,7 @@ $host = getenv('MYSQL_ADDON_HOST');
 $db = getenv('MYSQL_ADDON_DB');
 $user = getenv('MYSQL_ADDON_USER');
 $pass = getenv('MYSQL_ADDON_PASSWORD');
-session_start();
+
 
 try {
     // Creating a new PDO instance

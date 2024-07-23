@@ -1,14 +1,6 @@
-
-<?php
-include 'db.php';
-
-if (!isset($_SESSION['user_id'])) {
-    header("Location: index.php");
-    exit();
-}
-
-// The rest of your protected page content goes here
-?>
+<?php 
+ include 'db.php';
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -108,7 +100,7 @@ a:hover {
         <label for="product_id">Product:</label>
         <select id="product_id" name="product_id" required>
             <?php
-            
+            include 'php/db.php';
 
             $sql = "SELECT id, name FROM products";
             $stmt = $pdo->query($sql);
@@ -144,6 +136,6 @@ a:hover {
     }
     ?>
 
-    <a href="home.php">Back to Home</a>
+    <a href="index.php">Back to Home</a>
 </body>
 </html>

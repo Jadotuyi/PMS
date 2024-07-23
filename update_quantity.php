@@ -1,15 +1,5 @@
-<?php
-include 'db.php';
-
-if (!isset($_SESSION['user_id'])) {
-    header("Location: index.php");
-    exit();
-}
-
-// The rest of your protected page content goes here
-?>
 <?php 
- 
+ include 'db.php';
  if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $productId = $_POST['product_id'];
     $newQuantity = $_POST['new_quantity'];
@@ -153,6 +143,6 @@ a:hover {
         <button type="submit">Update Quantity</button>
     </form>
 
-    <a href="home.php">Back to Home</a>
+    <a href="index.php">Back to Home</a>
 </body>
 </html>

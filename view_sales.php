@@ -1,13 +1,4 @@
-<?php
-include 'db.php';
 
-if (!isset($_SESSION['user_id'])) {
-    header("Location: index.php");
-    exit();
-}
-
-// The rest of your protected page content goes here
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -81,7 +72,7 @@ a:hover {
 <body>
     <h2>View All Sales</h2>
     <?php
-
+include 'db.php';
 
 $sql = "SELECT sales.id, sales.product_id, sales.quantity, sales.sale_price, sales.sale_date, products.name AS product_name, products.price AS unit_price 
         FROM sales 
@@ -105,7 +96,7 @@ while ($row = $stmt->fetch()) {
     $i=$i+1;
 }
 echo "</table>";
-echo "<a href='home.php'>Back to Home</a>";
+echo "<a href='index.php'>Back to Home</a>";
 ?>
 
     
