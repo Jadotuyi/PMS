@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Sale</title>
     <link rel="stylesheet" href="css/style.css">
-     <link rel="icon" type="image/png" sizes="32x32" href="path/to/your/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="logo.png">
 </head>
 <style type="text/css">
     /* General styles */
