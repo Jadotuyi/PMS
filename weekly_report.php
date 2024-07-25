@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weekly Report</title>
     <link rel="stylesheet" href="css/style.css">
+     <link rel="icon" type="image/png" sizes="32x32" href="path/to/your/favicon.png">
 </head>
 <style type="text/css">
     /* Reset some default browser styles */
